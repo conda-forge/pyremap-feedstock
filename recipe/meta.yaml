@@ -1,16 +1,16 @@
 {% set name = "pyremap" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/xylar/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3ca8da6fdefaf23f14a4556271e025aef0ab5480a0cae5da1cc3fa1bb46f82f3
+  url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: 716ee3d168c31b24b6e111397a2f40b9990e620c0c2038cf148bbe644178b755
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win or py<36]
 
@@ -37,13 +37,13 @@ test:
     - pyremap
 
 about:
-  home: https://github.com/xylar/pyremap
+  home: https://github.com/MPAS-Dev/pyremap
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'Python remapping tools for climate and earth system models.'
   doc_url: https://pyremap.readthedocs.io/en/latest/
-  dev_url: https://github.com/xylar/pyremap
+  dev_url: https://github.com/MPAS-Dev/pyremap
 
 extra:
   recipe-maintainers:

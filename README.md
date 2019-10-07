@@ -1,7 +1,7 @@
 About pyremap
 =============
 
-Home: https://github.com/xylar/pyremap
+Home: https://github.com/MPAS-Dev/pyremap
 
 Package license: BSD-3-Clause
 
