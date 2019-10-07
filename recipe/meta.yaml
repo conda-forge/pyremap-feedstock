@@ -10,19 +10,19 @@ source:
   sha256: 3ca8da6fdefaf23f14a4556271e025aef0ab5480a0cae5da1cc3fa1bb46f82f3
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win]
+  skip: true  # [win or py<36]
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
   run:
-    - python >=3.6
+    - python
     - numpy
     - scipy
-    - netCDF4
+    - netcdf4
     - xarray >=0.10.0
     - dask
     - nco >=4.8.1
