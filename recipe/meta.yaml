@@ -1,5 +1,5 @@
 {% set name = "pyremap" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,25 +7,28 @@ package:
 
 source:
   url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 318a8921bffee5bcf839da131ae39185af96396faa5ff0a460ba2785d51a2203
+  sha256: 13eabceda9e7ebd410773b494f6453d8807dedd33d40a66f7dd4a910b763c186
+  patches:
+    - 0001-Switch-to-using-tempfile-rather-than-backports.tempf.patch
 
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win or py<36]
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     - netcdf4
     - xarray >=0.10.0
     - dask
     - nco >=4.8.1
+    - esmf
     - pyproj
 
 test:
