@@ -1,0 +1,27 @@
+From 1ce9bc1af34945454efa4780f19b26c1404dd001 Mon Sep 17 00:00:00 2001
+From: Xylar Asay-Davis <xylarstorm@gmail.com>
+Date: Tue, 10 Mar 2020 13:08:15 +0100
+Subject: [PATCH] Switch to using tempfile rather than backports.tempfile
+
+We only support newer versions of pythong that have tempfile and
+don't need the backports version
+---
+ pyremap/remapper.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pyremap/remapper.py b/pyremap/remapper.py
+index 1a7e528..8e0d110 100644
+--- a/pyremap/remapper.py
++++ b/pyremap/remapper.py
+@@ -23,7 +23,7 @@ remap - perform horizontal interpolation on a data sets, given a mapping file
+ # Xylar Asay-Davis
+ 
+ import subprocess
+-from backports.tempfile import TemporaryDirectory
++from tempfile import TemporaryDirectory
+ import os
+ from distutils.spawn import find_executable
+ import numpy
+-- 
+2.25.0
+
