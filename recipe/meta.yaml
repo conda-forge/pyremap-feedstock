@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 318a8921bffee5bcf839da131ae39185af96396faa5ff0a460ba2785d51a2203
+  sha256: 13eabceda9e7ebd410773b494f6453d8807dedd33d40a66f7dd4a910b763c186
 
 build:
   number: 0
