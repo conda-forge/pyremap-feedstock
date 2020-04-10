@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
   sha256: c3b634dcd5565583cf7dc01d6acc1ccebcf1776fdce3de51a83b8596d92097c7
-  patches:
-    - 0001-Switch-to-using-tempfile-rather-than-backports.tempf.patch
 
 build:
   number: 0
