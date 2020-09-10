@@ -5,7 +5,7 @@ Home: https://github.com/MPAS-Dev/pyremap
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python remapping tools for climate and earth system models.
 
