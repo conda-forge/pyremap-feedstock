@@ -1,5 +1,5 @@
 {% set name = "pyremap" %}
-{% set version = "0.0.12" %}
+{% set version = "0.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: e7638e510ce39c9e1ed941a55ff46d574c549fb463d8272524c369316e6018a5
+  sha256: 55a13719d11c9e7e1b453414325fedd6fe699eda6bd3a8c5ca96e714ab720b0c
 
 build:
   number: 0
