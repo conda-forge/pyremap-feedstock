@@ -39,6 +39,8 @@ tests:
   - requirements:
       run:
         - pytest
+        # the nompi version doesn't seem to be working right now
+        - esmf * mpi_mpich*
     script:
       - pytest --pyargs pyremap
 
