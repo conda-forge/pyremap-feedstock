@@ -3,15 +3,11 @@ About pyremap-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyremap-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/MPAS-Dev/pyremap
+
 
 Package license: BSD-3-Clause
 
 Summary: Python remapping tools for climate and earth system models.
-
-Development: https://github.com/MPAS-Dev/pyremap
-
-Documentation: https://pyremap.readthedocs.io/en/latest/
 
 Current build status
 ====================
@@ -147,5 +143,4 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@xylar](https://github.com/xylar/)
 
