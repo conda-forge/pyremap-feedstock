@@ -10,16 +10,16 @@ source:
   sha256: 511dd3756aefe5a8d5d8f1cc28fcf5b46e249eeb3d379bc33386e94c8be088a7
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - scipy
     - netcdf4
@@ -32,6 +32,7 @@ requirements:
 test:
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - pytest --pyargs pyremap
   imports:
