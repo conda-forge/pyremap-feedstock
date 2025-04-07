@@ -34,8 +34,10 @@ test:
   requires:
     - pytest
     - python {{ python_min }}
+  source_files:
+    - tests
   commands:
-    - pytest --pyargs pyremap
+    - pytest --pyargs tests
   imports:
     - pyremap
 
