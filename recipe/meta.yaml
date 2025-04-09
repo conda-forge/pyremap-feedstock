@@ -1,5 +1,5 @@
 {% set name = "pyremap" %}
-{% set version = "1.4.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/MPAS-Dev/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 651251db232a7e83fa3e2fb16a7c79a4143e458ffcebb9f9e74d18c3da1f3535
+  sha256: ae2d0ffcf859704dce255de874207cc57834590fd52ffe6c5b879f8ae874c572
 
 build:
   number: 0
@@ -34,8 +34,10 @@ test:
   requires:
     - pytest
     - python {{ python_min }}
+  source_files:
+    - tests
   commands:
-    - pytest --pyargs pyremap
+    - pytest --pyargs tests
   imports:
     - pyremap
 
