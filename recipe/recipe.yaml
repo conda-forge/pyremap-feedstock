@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyremap
-  version: "2.5.0"
+  version: "2.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/MPAS-Dev/${{ name }}/archive/${{ version }}.tar.gz
-  sha256: 199804403a3171ed3a0011e1018d30ce47671e4e64c6a3156cabb334af1d15f3
+  sha256: d0bee4ef896ac2c5aafb97c3c4f94727e197eb71cab96689b29c2fe9f1408b35
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - netcdf4
     - xarray >=0.10.0
     - dask
-    - nco >=4.8.1
+    - nco >=5.4.2
     - esmf
     - pyproj
 
